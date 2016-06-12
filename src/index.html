@@ -1,0 +1,85 @@
+---
+slug: home
+path: "/"
+title: The Studio — Photography from Jonathan & Colsey Simcoe
+description: We love taking beautiful, original, heartfelt pictures of families, birth, and infants.
+image: the-studio-1200x630.jpg
+sitemap_exclude: false
+---
+
+{% extends 'templates/default.html' %}
+
+{% block masthead %}
+  <article id="alert-form" class="w-100 br2 ba bg-slate white mb4 pa2 dn animated fadeInDown">
+    <h2 class="f4 fw4 tc">Thank your for submission. If you're a human, a human will respond at some point. 🤖</h2>
+  </article>
+  <article id="alert-404" class="w-100 br2 ba bg-slate white mb4 pa2 dn animated fadeInDown">
+    <h2 class="f4 fw4 tc"><span class="ttu tracked fw7">404 Error</span>— Oh Snap! 📷 Sorry for that fail. Feel free to browse the site anyway.</h2>
+  </article>
+  <article class="pa3">
+    <h1 class="f2 f1-ns mb5 w-75 slate center tc">Photography. From our heart. For your family. In your home.</h1>
+  </article>
+{% endblock %}
+
+{% block main %}
+  <article id="photos" class="pa3">
+    <h2 class="f5 mb4 ttu tracked slate tc">Birth</h2>
+    <section class="cf">
+      <div class="fn fl-ns w-100 w-50-ns">
+        <a href="https://dribbble.com/shots/2704225-Alloy-Wordmark" target="_blank" class="db dim">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/1101120/screenshots/2704225/alloy-dribbble-2.png" alt="Alloy Wordmark" class="db w-100" />
+        </a>
+      </div>
+      <div class="fn fl-ns w-100 w-50-ns">
+        <a href="https://dribbble.com/shots/2653083-Circle-Android-Beta" target="_blank" class="db dim">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/1101120/screenshots/2653083/dribbble-android-teaser.png" alt="Circle Android Beta" class="db w-100" />
+        </a>
+      </div>
+      <div class="fn fl-ns w-100 w-50-ns">
+        <a href="https://dribbble.com/shots/2641519-CircleMoji" target="_blank" class="db dim">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/1101120/screenshots/2641519/dribbble-circlemoji.png" alt="CircleMoji" class="db w-100" />
+        </a>
+      </div>
+      <div class="fn fl-ns w-100 w-50-ns">
+        <a href="https://dribbble.com/shots/2639201-Broken-Arrow-Identity-Mark" target="_blank" class="db dim">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/1101120/screenshots/2639201/broken-arrow-dribbble.png" alt="Broken Arrow Identity Mark" class="db w-100" />
+        </a>
+      </div>
+      <div class="fn fl-ns w-100 w-50-ns">
+        <a href="https://dribbble.com/shots/2606229-Lingo-for-Mac-Icon" target="_blank" class="db dim">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/1101120/screenshots/2606229/dribbble-lingo.png" alt="Lingo for Mac Icon" class="db w-100" />
+        </a>
+      </div>
+      <div class="fn fl-ns w-100 w-50-ns">
+        <a href="https://dribbble.com/shots/2622523-Redeemer-Church-PDX-Logo" target="_blank" class="db dim">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/1101120/screenshots/2622523/dribbble-redeemer.png" alt="Redeemer Churck PDX Logo" class="db w-100" />
+        </a>
+      </div>
+    </section>
+  </article>
+  <article id="about" class="pa3">
+    <h2 class="f5 ttu tracked slate">About Us</h2>
+    <img src="/media/jonathan-and-colsey-simcoe.jpg" alt="Jonathan & Colsey Simcoe in 2009." class="w-5 w-33-ns center br-100 db fn fr-ns pl3 mw5" />
+    <p class="measure f5 f4-ns lh-copy">
+      I am first a Christian and then a husband and father who strives to glorify God in all aspects of my life. I am Senior Product Designer at Circle with Disney where I shape the direction of our brand and products through design.
+    </p>
+    <p class="measure f5 f4-ns lh-copy">
+      I previously done work for Under Armour, Mozo Shoes, TGC, Songs for Saplings, and a host of smaller clients. Before that WebMD Health Services where I helped push new standards like responsive design and adoption of HTML5 and CSS3 to produce better web experiences for clients. Prior to WebMD, I worked at the Waggener Edstrom Studio D™ digital strategies practice, churning out creative web, digital and print work for clients such as Microsoft, Bing, Verizon, HTC, Sasquatch! Music Festival, Washington Roundtable, and the Jebsen Group.
+    </p>
+    <p class="measure f5 f4-ns lh-copy">
+      I have a passion for learning and am excited about the direction of the web, as well as how new-fangled web technologies are facilitating and enabling great content to take on a variety of forms to reach new audiences.
+    </p>
+  </article>
+  <article id="contact" class="pa3">
+    <h2 class="f5 mb4 ttu tracked slate">Contact</h2>
+    <form action="https://formspree.io/form@jdsimcoe.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" class="input-reset db br2 ba dark-gray b--black-10 pa3 mb3 w-100 w-25-ns" />
+      <input type="email" name="_replyto" placeholder="Email" class="input-reset db br2 ba dark-gray b--black-10 pa3 mb3 w-100 w-25-ns" />
+      <textarea type="text" name="content" placeholder="Say something..." rows="15" class="input-reset db br2 ba dark-gray b--black-10 pa3 mb3 w-100 w-50-ns"></textarea>
+      <input type="hidden" name="_next" value="/?form=success" />
+      <input type="hidden" name="_subject" value="🐴 jdsimcoe.com — New form submission!" />
+      <input type="text" name="_gotcha" class="dn" />
+      <input type="submit" value="Send" class="input-reset db br2 bn pa3 mb3 w-100 w-25-ns bg-slate white dim cp" />
+    </form>
+  </article>
+{% endblock %}

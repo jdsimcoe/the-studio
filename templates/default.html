@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include '_partials/head.html' %}
+  </head>
+  <body class="w-100 sans-serif bg-white" >
+    {% include '_partials/nav.html' %}
+    <section data-name="component-info" class="pa3 pa5-ns black-70 animated fadeIn">
+      {% block masthead %}{% endblock %}
+      {% block main %}{% endblock %}
+    </section>
+    {% include '_partials/footer.html' %}
+    {% include '_partials/scripts.html' %}
+  </body>
+</html>
